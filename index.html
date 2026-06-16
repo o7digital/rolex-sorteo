@@ -143,7 +143,7 @@
       border-radius:24px;background:rgba(2,31,24,.88);border:1px solid var(--line);
       padding:18px;color:var(--gold2);font-weight:950;letter-spacing:.08em;text-align:center;font-size:12px;
     }
-    .case-img{position:absolute;inset:34px 34px 86px 34px;border-radius:20px;object-fit:cover;width:calc(100% - 68px);height:calc(100% - 120px)}
+    .case-img{position:absolute;inset:34px 34px 86px 34px;border-radius:20px;object-fit:cover;width:calc(100% - 68px);height:calc(100% - 120px);z-index:3}
     .sparkle{position:absolute;border-radius:50%;background:var(--gold2);box-shadow:0 0 28px var(--gold2)}
     .s1{width:9px;height:9px;top:11%;right:18%}.s2{width:6px;height:6px;bottom:28%;left:12%}.s3{width:12px;height:12px;bottom:18%;right:7%}
     .ribbon{
@@ -181,7 +181,7 @@
       position:relative;
       overflow:hidden;
     }
-    .drop-img img{position:absolute;inset:24px;width:calc(100% - 48px);height:calc(100% - 48px);object-fit:cover;border-radius:28px;border:1px solid rgba(255,255,255,.08)}
+    .drop-img img{position:absolute;inset:24px;width:calc(100% - 48px);height:calc(100% - 48px);object-fit:cover;border-radius:28px;border:1px solid rgba(255,255,255,.08);z-index:2}
     .drop-info{padding:52px}
     .drop-info h2{font-family:Cinzel,serif;font-size:clamp(38px,4vw,58px)}
     .drop-info p{color:rgba(255,255,255,.72);line-height:1.7}
@@ -482,7 +482,7 @@
       padding:32px;box-shadow:0 22px 70px rgba(6,69,51,.08);
       position:relative;overflow:hidden;
     }
-    .card .card-photo{position:absolute;right:22px;top:18px;width:92px;height:92px;border-radius:12px;object-fit:cover;box-shadow:0 12px 30px rgba(6,69,51,.08)}
+    .card .card-photo{position:absolute;right:22px;top:18px;width:92px;height:92px;border-radius:12px;object-fit:cover;box-shadow:0 12px 30px rgba(6,69,51,.08);z-index:2}
     .card:before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,var(--emerald),var(--gold))}
     .card .num{font-family:Cinzel,serif;color:var(--gold);font-size:38px;font-weight:800}
     .card h3{font-size:23px;margin:14px 0 10px}.card p{color:var(--muted);line-height:1.65;margin:0}
