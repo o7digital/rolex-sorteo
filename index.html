@@ -143,6 +143,7 @@
       border-radius:24px;background:rgba(2,31,24,.88);border:1px solid var(--line);
       padding:18px;color:var(--gold2);font-weight:950;letter-spacing:.08em;text-align:center;font-size:12px;
     }
+    .case-img{position:absolute;inset:34px 34px 86px 34px;border-radius:20px;object-fit:cover;width:calc(100% - 68px);height:calc(100% - 120px)}
     .sparkle{position:absolute;border-radius:50%;background:var(--gold2);box-shadow:0 0 28px var(--gold2)}
     .s1{width:9px;height:9px;top:11%;right:18%}.s2{width:6px;height:6px;bottom:28%;left:12%}.s3{width:12px;height:12px;bottom:18%;right:7%}
     .ribbon{
@@ -178,7 +179,9 @@
         radial-gradient(circle at 50% 42%,#1e6f94 0 14%,#0d3e57 15% 25%,#0b1413 26% 27%,#d9dad3 28% 32%,#5d6461 33% 34%,#f4f5f1 35% 39%,#0b1110 40% 41%,transparent 42%),
         linear-gradient(120deg,#39413d,#fff,#777,#f6f6f6,#3c4540);
       position:relative;
+      overflow:hidden;
     }
+    .drop-img img{position:absolute;inset:24px;width:calc(100% - 48px);height:calc(100% - 48px);object-fit:cover;border-radius:28px;border:1px solid rgba(255,255,255,.08)}
     .drop-info{padding:52px}
     .drop-info h2{font-family:Cinzel,serif;font-size:clamp(38px,4vw,58px)}
     .drop-info p{color:rgba(255,255,255,.72);line-height:1.7}
@@ -241,6 +244,7 @@
         <div class="case">
           <span class="sparkle s1"></span><span class="sparkle s2"></span><span class="sparkle s3"></span>
           <div class="ribbon">Próximo drop</div>
+           <img class="case-img" src="public/1.jpg" alt="Pieza" />
         </div>
       </div>
     </section>
@@ -260,7 +264,9 @@
 
     <section id="pieza">
       <div class="drop">
-        <div class="drop-img"></div>
+        <div class="drop-img">
+        <img src="public/2.jpg" alt="Drop" />
+        </div>
         <div class="drop-info">
           <span class="badge">Drop activo</span>
           <h2>Rolex Datejust Blue Roman Dial 41mm</h2>
@@ -476,6 +482,7 @@
       padding:32px;box-shadow:0 22px 70px rgba(6,69,51,.08);
       position:relative;overflow:hidden;
     }
+    .card .card-photo{position:absolute;right:22px;top:18px;width:92px;height:92px;border-radius:12px;object-fit:cover;box-shadow:0 12px 30px rgba(6,69,51,.08)}
     .card:before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,var(--emerald),var(--gold))}
     .card .num{font-family:Cinzel,serif;color:var(--gold);font-size:38px;font-weight:800}
     .card h3{font-size:23px;margin:14px 0 10px}.card p{color:var(--muted);line-height:1.65;margin:0}
@@ -565,7 +572,7 @@
         <p>El diseño tiene que quitar dudas: el usuario debe sentir que está entrando a una experiencia seria, cuidada y verificable.</p>
       </div>
       <div class="cards">
-        <div class="card"><div class="num">01</div><h3>Pieza documentada</h3><p>Modelo, referencia, año, estado, fotos reales, caja, tarjeta o documentación disponible en cada ficha.</p></div>
+        <div class="card"><img class="card-photo" src="public/ern-gan-3vSGyBo8_pU-unsplash.jpg" alt="Foto" /><div class="num">01</div><h3>Pieza documentada</h3><p>Modelo, referencia, año, estado, fotos reales, caja, tarjeta o documentación disponible en cada ficha.</p></div>
         <div class="card"><div class="num">02</div><h3>Boletos claros</h3><p>Cupos limitados, disponibilidad visible, comprobante de participación y seguimiento directo por WhatsApp.</p></div>
         <div class="card"><div class="num">03</div><h3>Entrega verificable</h3><p>Resultado publicado, evidencia del sorteo, ganador anunciado y entrega documentada para reforzar reputación.</p></div>
       </div>
